@@ -8,7 +8,6 @@ public class Goods {
 	private int price;
 	
 	
-	
 	// 생성자
 	
 	// 메소드 - gs
@@ -21,7 +20,7 @@ public class Goods {
 	}
 	
 	public String getName() {
-		return name;	// 니콘의 값을 받고 다시 name 값은 리턴(반환)된다.	camera예시임
+		return name;	// return name의 뜻은 name을 main() getName에다 보낸다는 의미
 	}
 	
 	public int getPrice() {
@@ -37,3 +36,4 @@ public class Goods {
 
 	
 }
+
