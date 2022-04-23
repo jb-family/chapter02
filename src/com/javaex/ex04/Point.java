@@ -5,6 +5,7 @@ public class Point {
 	//필드
 	private int x;
 	private int y;
+	
 	//생성자
 	
 	
@@ -48,12 +49,12 @@ public class Point {
 		return x;
 	}
 	
-	public void setX(int x) {
-		this.x = x;
-	}
 	
 	public int getY() {
 		return y;
+	}
+	public void setX(int x) {
+		this.x = x;
 	}
 	
 	public void setY(int y) {

@@ -11,7 +11,7 @@ public class GoodsApp {
 		//	Goods 생성자 안에 ()인자 값이 있으면 Goods 클래스안에 생성자를 찾는데
 		//	인자의 타입과 개수가 맞는걸 찾으면 추가로직을 입력한 생성자가 실행된다.
 		//	생성자는 한번만 사용되고 메모리에서 사라진다.( 한번만 사용된다는 것은 
-		//	Goods computer 에서를 말한다. 
+		//	Goods computer 에서를 말한다. )
 			
 			Goods computer = new Goods("LG그램",900000);	 
 			Goods camera = new Goods("니콘");

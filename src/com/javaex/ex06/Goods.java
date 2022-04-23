@@ -37,6 +37,11 @@ public class Goods {
 	
 	//메소드 - gs
 	
+	@Override
+	public String toString() {
+		return "Goods [name=" + name + ", price=" + price + "]";
+	}
+
 	public String getName() {
 		return name;
 	}
