@@ -65,8 +65,8 @@ public class TvApp {
 		System.out.println("==========전원테스트==========");
 		tv.power(false);
 		tv.status();
-		
-		
+		tv.volume(true);
+		tv.status();
 		
 		
 		

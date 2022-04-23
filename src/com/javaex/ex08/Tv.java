@@ -111,14 +111,17 @@ public class Tv {
 	}
 	
 	public void volume (boolean up) {
-		if(up == true && this.volume >= 0 && this.volume < 100) { 
+		if(up == true && power == true && this.volume >= 0 && this.volume < 100) { 
 			this.volume++;
 		}
-		else if(up == false && this.volume > 0 && this.volume <= 100) {
+		else if(up == false && power == true && this.volume > 0 && this.volume <= 100) {
 		this.volume--; 
 		if(this.volume == 0) {
 			System.out.println("현재는 음소거상태입니다.");
 		}
+		}
+		else {
+			System.out.println("Tv가 꺼져있어 조작할 수 없습니다.");
 		}
 	}
 	
