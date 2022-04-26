@@ -17,6 +17,8 @@ public class GoodsApp {
 			Goods camera = new Goods("니콘");
 			Goods cup = new Goods();
 			
+			computer.showinfo();
+			
 		/*
 		Goods computer = new Goods();	 
 		computer.setName("LG그램");
