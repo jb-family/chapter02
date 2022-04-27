@@ -8,8 +8,7 @@ public class Circle extends Figure{
 	public Circle() {}
 	
 	public Circle(String fillColor, String lineColor, int radius) {
-		super(fillColor, lineColor);
-		this.radius = radius;
+		super(fillColor, lineColor, radius);
 	}
 
 	//메소드 - gs
@@ -41,7 +40,7 @@ public class Circle extends Figure{
 	//메소드 - 일반
 	
 	public void draw() {
-		System.out.println("면색 :" + super.fillColor + ", 선색 :" + super.lineColor + ", 반지름 :" + this.radius +" 원을 그렸습니다.");	
+		System.out.println("면색 :" + super.fillColor + ", 선색 :" + super.lineColor + ", 반지름 :" + super.radius +" 원을 그렸습니다.");	
 	}
 	
 	

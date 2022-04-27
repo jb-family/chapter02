@@ -21,9 +21,10 @@ public class Figure {
 		this.height = height;
 	}
 	
-	public Figure(String fillColor, String lineColor) {
+	public Figure(String fillColor, String lineColor, int radius) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
+		this.radius = radius;
 	}
 
 	//메소드 - gs
