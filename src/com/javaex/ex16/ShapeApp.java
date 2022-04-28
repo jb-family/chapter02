@@ -51,6 +51,8 @@ public class ShapeApp {
 		System.out.println(sArray[i].area());
 	}
 	
+	System.out.println(((Recktangle)sArray[0]).getWidth());
+	
 	//입력하면 Recktangle의 값이나온다. sArray[0]은 r01이고 r01은 Shape만 볼수 있지만 값은 덮어서 쓰여져 Recktangle의 toString이 출력된다.
 	//메소드 오버라이딩이 된다.
 	//부모클래스에 draw() 메소드가 없으면 출력할수없다. 그래서 오버라이딩 할수가 없다. 그래서 부모클래스에 똑같은 이름의 메소드 draw()를 만들어 놓으면 
