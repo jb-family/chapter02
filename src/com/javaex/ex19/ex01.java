@@ -1,5 +1,6 @@
 package com.javaex.ex19;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ex01 {

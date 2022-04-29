@@ -4,52 +4,56 @@ import java.io.IOException;
 
 public class MyFile {
 
-   // constructor
+   // 생성자
    public MyFile() {
 
    }
 
-   // method - g/s
+   // 메소드 - gs
 
-   // method - general
+   // 메소드 - 일반
+   //정상적인 경우
    public String read(String path) {
       // path에 있는 파일을 읽어서 문자열 만들어준다.
       String result = "학교종이 떙땡땡 어서 모이자";
       return result;
    }
 
+   
+   //파일이 없는 경우 --> 만드는쪽에서 예외처리 하는경우
    public String read2(String path) {
-      String result = "";
-      /*
-      try {
-         // path에 있는 파일을 읽어서 문자열 만들어준다.
-         // 파일이 없을때
-         throw new IOException(); // 파일이 없는 상황을 강제로 발생
-      } catch (IOException e) {
-         System.out.println(path + " : file does not exist");
-      } catch (NullPointerException n) {
-         System.out.println(path + " 널포인트");
-      } catch (ArithmeticException a) {
-         System.out.println(path + " 0으로 나눌 수 없습니다");
-      }
-      */
-      try {
-         // path에 있는 파일을 읽어서 문자열 만들어준다.
-         // 파일이 없을때
-         throw new IOException();
-      } catch (Exception e) {
-         System.out.println(path+" : file does not exist");
-      }
-      
-      return result;
+	   String result = "";
+	   /*
+	   try {
+		   // path에 있는 파일을 읽어서 문자열 만들어준다.
+		   // 파일이 없을때	   
+	       throw new IOException(); // 파일이 없는 상황을 강제로 발생 (예외강제발생)
+	} catch (IOException e) {
+		System.out.println(path + "no file");
+	} catch(NullPointerException e) {
+		System.out.println("널포인트");
+	} catch(ArithmeticException e) {
+		System.out.println("0으로 나눌수 없습니다.");
+	}
+     */
+	   try {
+		   // path에 있는 파일을 읽어서 문자열 만들어준다.
+		   // 파일이 없을때	   
+	       throw new IOException(); // 파일이 없는 상황을 강제로 발생 (예외강제발생)
+	} catch (IOException e) {
+		System.out.println(path + "no file");
+	}
+	   return result;
    }
    
-   //파일이 없는 경우 -- 사용하는쪽에 예외를 알리는 경우
-   public String read3(String path) throws IOException { //내용에는 throw -> method 에는 throws!!
+   //파일이 없는 경우 --> 사용하는쪽에 예외를 알리는 경우 
+
    
-      String result = "";
-      
-      throw new IOException(); // 파일이 없는 상황을 강제로 발생
-      
+   public void read3(String path) throws IOException{
+	   String result = "";
+	    
+   throw new IOException(); // 파일이 없는 상황을 강제로 발생 (예외강제발생)
+	 
    }
+   
 }
